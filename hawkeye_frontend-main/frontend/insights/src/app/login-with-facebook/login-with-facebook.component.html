@@ -1,0 +1,18 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+<div class="signin_page">
+    <!--<img class="heading_top" src="../assets/images/Hawkeye.png" alt="Hawkeye_img">-->
+    <div class="signin_box box_color">
+        <div class="form_box">
+            <div *ngIf="displayerrors" class="error">Warning* {{errors}}</div>
+            <h2 class="heading1">Connect Through Facebook</h2>
+            <img class="hand connect-to-fb-btn" src="../assets/images/facebook.png" (click)="signInWithFB()" />
+            <div class="buttons_flex">
+                <button class="hand button" (click)="logout()">LOGOUT</button>
+                <!--<button class="hand gtpp" (click)="gtpp()">GO TO PRICING PAGE</button>-->
+            </div>
+        </div>
+        <img class="login_img background-login-img" src="../assets/images/connect.png" alt="login_img">
+        <p class="copyright">2023 © All Rights Reserved. Terms of Service</p>
+    </div>
+</div>

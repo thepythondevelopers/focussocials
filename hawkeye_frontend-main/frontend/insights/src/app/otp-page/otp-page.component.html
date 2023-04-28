@@ -1,0 +1,19 @@
+<app-navbar2></app-navbar2>
+<div class="forgot_page">
+    <!--<img class="heading_top" src="../assets/images/Hawkeye.png" alt="Hawkeye_img">-->
+    <div class="forgot_box">
+        <div class="form_box">
+            <h1>Check Your Email</h1>
+            <p class="text">Enter the OTP for changing the password we have sent on your Email. <a href="https://focussocials.com/forgot_password">Resend OTP</a></p>
+            <form class="forgot_form" #forgot="ngForm" (ngSubmit)="checkotp(forgot.value)">
+                <input class="input" name="otp" required type="text" email placeholder="Enter OTP" ngModel />
+                <br />
+                <div class="flex_box">
+                    <button class="hand forgot_btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <img class="login_img" src="../assets/images/login.png" alt="login_img">
+        <p class="copyright">2023 © All Rights Reserved. Terms of Service</p>
+    </div>
+</div>

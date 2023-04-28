@@ -1,0 +1,24 @@
+<app-navbar2></app-navbar2>
+<div class="signin_page">
+    <!--<img class="heading_top" src="../assets/images/Hawkeye.png" alt="Hawkeye_img">-->
+    <div class="signin_box">
+        <div class="form_box">
+            <h2 class="heading1">Sign In</h2>
+            <form class="signin_form" #login="ngForm" (ngSubmit)="logindata(login.value)">
+            <input id="email" class="input" name="email" required #email="ngModel" type="email" email placeholder="Your Email" [(ngModel)]="Formdata.email"/>
+            <br />
+            <br />
+            <input id="password" class="input" name="password" required #password="ngModel"  [type]="!eye ? 'password' : 'text'" placeholder="Password" [(ngModel)]="Formdata.password" /><i *ngIf="!eye" (click)='eyeone()' class="closeeye fa fa-eye-slash" aria-hidden="true"></i><i *ngIf="eye" (click)="eyeone()" class="closeeye fa fa-eye" aria-hidden="true"></i>
+            <br />
+            <br />
+            <input class="hand checkbox" type="checkbox" id="remember_me" name="remember_me" value="remember_me" (click)="checkbox()">
+            <label for="remember_me">Remember Me</label><br>
+            <a href="/forgot_password" class="fp">Forgot Password?</a>
+            <button class="hand login_btn" type="submit">Login</button>
+            </form>
+        </div>
+        <img class="login_img" src="../assets/images/login.png" alt="login_img">
+        <div class="text1">Don't have an account?<a [routerLink]="['/signup']"> Create Account</a></div>
+        <p class="copyright">2023 © All Rights Reserved. Terms of Service</p>
+    </div>
+</div>

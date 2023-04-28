@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+<app-sidebar></app-sidebar>
+<h2>Profile</h2>
+<div class="profile_box">
+    <ngx-avatar *ngIf="!sdp" class="Avatar_icon" src={{imageurl}}  size="138"></ngx-avatar>
+    <ngx-avatar *ngIf="sdp" class="Avatar_icon" src="../assets/images/Avatar.png"  size="138"></ngx-avatar>
+    <div class="form_box">
+        <div class="form_in_two_parts">
+            <div>
+                <div class="user_name">{{fname}} {{lname}}</div>
+                <div class="occupation">{{occupation}}</div>
+                <div class="about_user_text">About</div>
+                <div class="about_user">{{about_me}}</div>
+                <div class="about_user_text">Email</div>
+                <div class="user_email">{{email}}</div>
+                </div>
+                <div class="fpr">
+                    <div class="about_user_text">Password</div>
+                    <div class="user_email">* * * * * * * * * *</div>
+                    <div class="about_user_text">Location</div>
+                    <div class="user_email">{{location}}</div>
+                    <div class="about_user_text">Website</div>
+                    <div class="user_email">{{website}}</div>
+                </div>
+                <button (click)="edit_profile()" class="hand button1" type="button">Edit</button><br/>
+        </div>
+    </div>
+    <div *ngIf="show_edit_box" class="form_box2">
+        <form class="fb2" #edit_profile="ngForm" (ngSubmit)="edit_profile_data(edit_profile.value)">
+            <div class="fitp">
+                <div>
+                    <div class="label">First Name</div>
+                    <input class="user_email" name="first_name" required #fn="ngModel" type="text" ngModel={{fname}} />
+                    <div class="label">Website</div>
+                    <input class="user_email" name="website" required #fn="ngModel" type="text" ngModel="{{website}}" />
+                    <div class="label">Location</div>
+                    <input class="user_email" name="location" required #fn="ngModel" type="text" ngModel="{{location}}" />
+                </div>
+                <div class="f2dr">
+                    <div class="label">Last Name</div>
+                    <input class="user_email" name="last_name" required #fn="ngModel" type="text" ngModel="{{lname}}" />
+                    <div class="label">Profile Image</div>
+                    <input class="user_email" name="image" required (change)="selectImage($event)" type="file" ngModel/>
+                    <div class="label">Occupation</div>
+                    <input class="user_email" name="occupation" required #fn="ngModel" type="text" ngModel={{occupation}} />
+                </div>
+            </div>
+            <input name="email" type="hidden" value="{{email}}" ngModel/>
+            <div class="label">About Me</div>
+            <input class="user_about" name="about_me" required #fn="ngModel" type="text" ngModel={{about_me}} />
+            <br/>
+            <div class="flex_btn">
+                <button (click)="cancel()" class="hand button2_cancel" type="button">Cancel</button><br/>
+                <button class="hand button2" type="submit">Save</button><br/>
+            </div>
+        </form>
+    </div>
+</div>

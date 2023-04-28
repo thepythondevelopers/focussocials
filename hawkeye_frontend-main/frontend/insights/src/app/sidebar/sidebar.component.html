@@ -1,0 +1,77 @@
+<div class="sidebar">
+    <img (click)="ndp()" class="hand dashboard_sidebar_icon" src="../assets/images/Vector.png" alt="dashboard_icon_img">
+    <img (click)="ndp()" class="hand dashboard_sidebar_icon2" src="../assets/images/vector2.png" alt="dashboard_icon2_img">
+    <ul>
+        <li (click)="ndp()" class="hand dashboard_text">Dashboard</li>
+        <li (click)="toggleData1()" class="hand text"><img class="pages_icon" src="../assets/images/pages.png" alt="pages_img"><div class="pages-and-sales-div">Pages</div><div *ngIf="!toDisplay1" class="angle-down"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div *ngIf="toDisplay1" class="angle-up"><i class="fa fa-angle-up" aria-hidden="true"></i></div></li>
+        <li (click)="ndp()" *ngIf="toDisplay1" class="hand text">Dashboard</li>
+        <li (click)="fdp()" *ngIf="toDisplay1" class="hand text">Followers Details<div *ngIf="!toDisplay_fdo" class="fd-angle-down"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div *ngIf="toDisplay_fdo" class="fd-angle-up"><i class="fa fa-angle-up" aria-hidden="true"></i></div></li>
+        <li (click)="bcity()" *ngIf="toDisplay_fdo" class="hand text tooltip">By City<span class="tooltiptext">Follwers details by city in depth.</span></li>
+        <li (click)="bcountry()" *ngIf="toDisplay_fdo" class="hand text tooltip">By Country<span class="tooltiptext">Follwers details by country in depth.</span></li>
+        <li (click)="bga()" *ngIf="toDisplay_fdo" class="hand text tooltip">By Gender and Age<span class="tooltiptext cw">Follwers details by gender and age in depth.</span></li>
+        <li (click)="idp()" *ngIf="toDisplay1" class="hand text tooltip">Impressions<span class="tooltiptext">Calender page for Impressions</span></li>
+        <li (click)="rdp()" *ngIf="toDisplay1" class="hand text tooltip">Reach<span class="tooltiptext">Calender page for Reach</span></li>
+        <li (click)="npdp()" *ngIf="toDisplay1" class="hand text tooltip">New posts<span class="tooltiptext">Calender page for New posts</span></li>
+        <li (click)="wdp()" *ngIf="toDisplay1" class="hand text tooltip">Webiste Clicks<span class="tooltiptext">Calender page for Website Clicks</span></li>
+        <li (click)="pcdp()" *ngIf="toDisplay1" class="hand text tooltip">Profile Clicks<span class="tooltiptext">Calender page for Profile Clicks</span></li>
+        <li (click)="prp()" *ngIf="toDisplay1" class="hand text tooltip">Pricing</li>
+        <li [routerLink]="['/about-us']" *ngIf="toDisplay1" class="hand text">About Us</li>
+        <li [routerLink]="['/contact-us']" *ngIf="toDisplay1" class="hand text">Contact Us</li>
+        <li (click)="toggleData()" class="hand text"><img class="sales_icon" src="../assets/images/sales.png" alt="sales_img"><div class="pages-and-sales-div">Suscription</div><div *ngIf="!toDisplay" class="angle-down"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div *ngIf="toDisplay" class="angle-up"><i class="fa fa-angle-up" aria-hidden="true"></i></div></li>
+        <li *ngIf="toDisplay" class="hand text" (click)="in_development()">Upgarde</li>
+        <li *ngIf="toDisplay" (click)="cancel_sub()" class="hand text">Cancel</li>
+        <li class="hand text" (click)="captureScreen()"><img class="inbox_icon" src="../assets/images/inbox-in.png" alt="inbox_img"><div class="mess-div">Capture Screen</div><div *ngIf="!toDisplay_capture" class="angle-down"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div *ngIf="toDisplay_capture" class="angle-up"><i class="fa fa-angle-up" aria-hidden="true"></i></div></li>
+        <li *ngIf="toDisplay_capture" class="hand text" (click)="captureScreen_as_image()">As Image</li>
+        <li *ngIf="toDisplay_capture" (click)="captureScreen_as_pdf()" class="hand text">As Pdf</li>
+        <li class="hand text" (click)="privacy_policy()"><img class="lock_icon" src="../assets/images/lock.png" alt="lock_img"><div class="auth-div">Privacy Policy</div></li>
+        <hr />
+        <li class="hand text"><img class="docs_icon" src="../assets/images/clipboard-list.png" alt="docs_img"><div class="docs-div">Terms and Conditions</div></li>
+        <li class="hand text"><img class="components_icon" src="../assets/images/collection.png" alt="components_img"><div class="comp-div">Contact Us</div></li>
+        <li (click)="toggleData3()" class="hand text"><img class="support_icon" src="../assets/images/support.png" alt="support_img"><div class="help-div">Settings</div><div *ngIf="!toDisplay3" class="angle-down"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div *ngIf="toDisplay3" class="angle-up"><i class="fa fa-angle-up" aria-hidden="true"></i></div></li>
+        <li *ngIf="toDisplay3" class="hand text" (click)="profile()">Update Profile</li>
+        <!--<li *ngIf="toDisplay3" class="text" (click)="update_card()">Change card</li>-->
+        <li (click)="switch_account()" class="hand text"><i class="support_icon fa fa-exchange" aria-hidden="true"></i><div class="help-div">Switch Ig Account</div><div *ngIf="!toDisplay4" class="angle-down"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div *ngIf="toDisplay4" class="angle-up"><i class="fa fa-angle-up" aria-hidden="true"></i></div></li>
+        <li *ngIf="toDisplay4 && toDisplay_sa_1" class="text"><span class="hand" *ngIf="!un_1_e" (click)="sa_1()">{{un_1}}</span><!--<span *ngIf="un_1_e" (click)="sa_1()" class="error hand">{{un_3}}</span>-->
+        <li *ngIf="toDisplay4 && toDisplay_sa_2" class="text"><span class="hand" *ngIf="!un_2_e" (click)="sa_2()">{{un_2}}</span><!--<span *ngIf="un_2_e" (click)="sa_2()" class="error hand">{{un_3}}</span>-->
+        <li *ngIf="toDisplay4 && toDisplay_sa_3" class="text"><span *ngIf="!un_3_e" class="hand" (click)="sa_3()">{{un_3}}</span><!--<span *ngIf="un_3_e" (click)="sa_3()" class="error hand">{{un_3}}</span>-->
+        <li *ngIf="toDisplay4 && toDisplay_sa_4" class="text"><span *ngIf="!un_4_e" class="hand" (click)="sa_4()">{{un_4}}</span><!--<span *ngIf="un_4_e" (click)="sa_4()" class="error hand">{{un_3}}</span>-->
+        <li *ngIf="toDisplay4 && toDisplay_sa_5" class="text"><span *ngIf="!un_5_e" class="hand" (click)="sa_5()">{{un_5}}</span><!--<span *ngIf="un_5_e" (click)="sa_5()" class="error hand">{{un_3}}</span>-->
+    </ul>
+    </div>
+<!-- The Modal -->
+<div *ngIf="toDisplaymodal" id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="form_box">
+        <h2 class="heading1">Reconnect Instagram Account</h2>
+        <form class="signin_form" #modal="ngForm" (ngSubmit)="modal_data(modal.value)">
+        <input class="input" name="name" required type="text" placeholder="Changed Name" ngModel />
+        <br />
+        <br />
+        <button (click)="close_modal()" class="hand cancel_btn" type="button">Cancel</button>
+        <button class="hand login_btn" type="submit">Save</button>
+        </form>
+    </div>
+  </div>
+
+</div>
+
+<!-- The Modal -->
+<div *ngIf="toDisplaymodal_sub" id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="form_box">
+        <h2 class="heading1">Cancel Subscription</h2>
+        <form class="signin_form" #modal_sub="ngForm" (ngSubmit)="modal_data_sub(modal_sub.value)">
+        <p>Are you sure you want to cancel your subscription?<p>
+        <br />
+        <br />
+        <button (click)="close_modal()" class="hand cancel_btn" type="button">Cancel</button>
+        <button class="hand login_btn" type="submit">Yes</button>
+        </form>
+    </div>
+  </div>
+
+</div>

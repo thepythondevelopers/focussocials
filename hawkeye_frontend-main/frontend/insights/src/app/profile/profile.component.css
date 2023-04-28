@@ -1,0 +1,289 @@
+h2{
+    position: absolute;
+    width: 89px;
+    height: 35px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 265px;
+    color: #3A3A49;
+    margin-top: 90px;
+}
+.label{
+width: 97.22px;
+height: 20px;
+left: 323px;
+padding-bottom: 10px;
+top: 499px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-transform: capitalize;
+
+color: rgba(0, 0, 0, 0.5);
+}
+.f2dr{
+    margin-left: 40px;
+}
+.fb2{
+    margin: 50px 0px 0px 45px;
+}
+.fitp{
+    display: flex;
+}
+.form_box2{
+    box-sizing: border-box;
+width: 1038px;
+height: 591px;
+left: 260px;
+margin-top: 70px;
+top: 449px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.12);
+box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.13);
+border-radius: 14px;
+}
+.button1{
+    position: absolute;
+    width: 95px;
+    height: 34px;
+    border: none;
+    left: 922px;
+    top: 20px;
+    background: linear-gradient(90deg, #613DC1 0%, #858AE3 100%);
+    border-radius: 5px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.button2{
+    margin-left: 40px;
+    width: 95px;
+    height: 34px;
+    border: none;
+    background: linear-gradient(90deg, #613DC1 0%, #858AE3 100%);
+    border-radius: 5px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.flex_btn{
+    display: flex;
+}
+.button2_cancel{
+    margin-left: 432px;
+    width: 95px;
+    height: 34px;
+    border: none;
+    background: linear-gradient(90deg, #613DC1 0%, #c92c2c 100%);
+    border-radius: 5px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.user_email{
+    left: 465px;
+    padding: 5px 0px 0px 20px;
+    border: 1px solid;
+    top: 321px;
+    margin-bottom: 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+    box-sizing: border-box;
+    width: 313px;
+    height: 35px;
+    left: 448px;
+    top: 314px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.51);
+}
+.user_about{
+    width: 664px;
+    height: 178px;
+    left: 465px;
+    padding: 5px 0px 0px 20px;
+    border: 1px solid;
+    top: 321px;
+    margin-bottom: 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+    box-sizing: border-box;
+    left: 448px;
+    top: 314px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.51);
+}
+.fpr{
+    padding-left: 70px;
+    margin-top: -5px;
+}
+.about_user{
+    width: 263px;
+    height: 30px;
+    left: 448px;
+    top: 240px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.51);
+}
+.about_user_text{
+    width: 46px;
+    height: 20px;
+    left: 448px;
+    top: 220px;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+.occupation{
+        width: 66px;
+        height: 20px;
+        left: 448px;
+        top: 196px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, 0.3);
+}
+.user_name{
+        width: 142px;
+        height: 25px;
+        left: 448px;
+        top: 172px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: capitalize;
+        color: #000000;
+}
+.form_in_two_parts{
+    display: flex;
+}
+.email_input{
+box-sizing: border-box;
+width: 283px;
+height: 35px;
+margin-top: 10px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+padding: 20px;
+color: rgba(0, 0, 0, 0.51);
+}
+.email{
+    width: 41px;
+    height: 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+.about_input{
+width: 263px;
+height: 30px;
+left: 448px;
+top: 240px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-transform: capitalize;
+border: none;
+color: rgba(0, 0, 0, 0.51);
+}
+.about{
+    width: 46px;
+    height: 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+.occupation_input{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.3);
+}
+.profile_box{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1038px;
+    height: 298px;
+    left: 270px;
+    top: 145px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 18px rgb(0 0 0 / 13%);
+    border-radius: 14px;
+}
+.name_input{
+    border: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000000;
+}
+input{
+    border:none;
+}
+.form_box{
+    margin-top: 35px;
+    margin-left: 200px;
+}
+.Avatar_icon{
+    box-sizing: border-box;
+    position: absolute;
+    width: 138px;
+    height: 138px;
+    left: 45px;
+    top: 30px;
+}

@@ -1,0 +1,18 @@
+<div class="navbar">
+    <img class="menu_icon" src="../assets/images/menu-alt-1.png" alt="menu_img">
+    <img (click)="redirect()" class="hand Hawkeye2_icon" src="../assets/images/Hawkeye2.png" alt="Hawkeye2_img">
+    <div class="ctf_button"><button *ngIf="!toDisplay_ctf" class="hand button" (click)="ndp()">Connect to facebook</button></div>
+    <!--<form>
+    <input type="text" placeholder="Search"/>
+    <button class="hand search" type="submit"><img class="search_icon" src="../assets/images/search.png" alt="search_img"></button>
+    </form>
+    <img class="bell_wn_icon" src="../assets/images/bell_wn.png" alt="bell_wn_img">-->
+    <div (click)="dropdown_beside_profile()" *ngIf="!toDisplay_dropdown_beside_profile" class="hand angle-down_bp"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div (click)="dropdown_beside_profile()" *ngIf="toDisplay_dropdown_beside_profile" class="angle-up_bp"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+    <div class="profile_options" *ngIf="toDisplay_dropdown_beside_profile">
+    <div class="hand profile_text" (click)="profile()">Profile</div>
+    <div class="hand logout_text" (click)="logout()">Logout</div>
+    </div>
+    <ngx-avatar *ngIf="!sdp" class="Avatar_icon" src={{imageurl}}></ngx-avatar>
+    <ngx-avatar *ngIf="sdp" class="Avatar_icon" src="../../assets/images/Avatar.png"></ngx-avatar>
+    <!--<img class="Avatar_icon" src="../assets/images/Avatar.png" alt="avatar_img">-->
+    </div>

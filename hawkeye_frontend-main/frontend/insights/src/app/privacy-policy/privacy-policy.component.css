@@ -1,0 +1,44 @@
+.pp_box{
+box-sizing: border-box;
+position: absolute;
+width: 1038px;
+height: 1108px;
+left: 260px;
+top: 92px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.12);
+box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.13);
+border-radius: 14px;
+overflow-y: auto;
+padding-bottom: 30px;
+}
+.copyright{
+    margin-top: 1300px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+span{
+color: #613DC1;
+font-size: 25px;
+}
+.content{
+    margin-left: 30px;
+    width: 947px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+h2{
+    width: 363.92px;
+    height: 31px;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    display: flex;
+    align-items: flex-end;
+    color: #343434;
+}

@@ -1,0 +1,20 @@
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+    color: #FFFFFF;
+    border: none;
+    margin: 10px 0px 0px 250px;
+    gap: 10px;
+    width: 144px;
+    height: 34px;
+    background: linear-gradient(90deg, #c13d3d 0%, #858AE3 100%);
+    border-radius: 5px;
+}
+.ctf_button{
+    margin: 10px 0px 0px 0px;
+    width: 144px;
+    height: 34px;
+}

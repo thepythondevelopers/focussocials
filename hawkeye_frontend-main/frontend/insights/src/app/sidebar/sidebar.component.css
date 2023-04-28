@@ -1,0 +1,156 @@
+.fd-angle-up{
+    margin: -48px 10px 0px 0px;
+    text-align: right;
+    font-size: 15px;
+}
+.fd-angle-down{
+    margin: -48px 10px 0px 0px;
+    text-align: right;
+    font-size: 15px;
+}
+input{
+    left: -75px !important;
+}
+.modal{
+    position: absolute;
+    left: 750px;
+    top: 30px;
+}
+.dashboard_sidebar_icon{
+    position: absolute;
+    top: 10px;
+    left: 22px;
+}
+.dashboard_sidebar_icon2{
+    margin-top: 10px;
+    margin-left: 34px;
+}
+.sidebar{
+position: absolute;
+width: 224px;
+height: 1438px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+}
+.dashboard_text{
+    margin-left: -40px;
+}
+.cancel_btn{
+    margin: 20px 320px 0px 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 34px;
+    left: 761px;
+    top: 737px;
+    background: linear-gradient(90deg, #ec0e0e 0%, #ee152b 100%);
+    border-radius: 5px;
+    border: none;
+}
+.login_btn{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 34px;
+    left: 761px;
+    top: 737px;
+    background: linear-gradient(90deg, #613DC1 0%, #858AE3 100%);
+    border-radius: 5px;
+    border: none;
+}
+.input{
+    position: relative !important;
+    margin-left: 180px !important;
+    text-align: center !important;
+    padding: 20px !important;
+    width: 400px !important;
+}
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .heading1{
+    margin: -20px 0px 20px -21px;
+    background-color: #613DC1;
+    width: 649px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    color: #ffff;
+  }
+  .active{
+    color:rgb(104, 192, 104)
+  }
+  .error{
+    color:red;
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Tooltip container */
+.tooltip {
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  font-size: 13px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.cw{
+  width: 270px !important;
+}
+.fa-exchange:before {
+  top: -4px;
+  left: 4px;
+  position: relative;
+}
