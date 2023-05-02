@@ -7,6 +7,7 @@ import { CheckUserPlanService } from '../check-user-plan.service';
 import { ProfileImageService } from '../profile-image.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { FacebookLoginProvider, SocialAuthService } from '@abacritt/angularx-social-login';
 
 @Component({
   selector: 'app-navbar',
@@ -20,7 +21,7 @@ export class NavbarComponent implements OnInit {
   sdp: any=false;
   imageurl: any;
   toDisplay_ctf: boolean=false;
-  constructor(private http: HttpClient, private toast:NgToastService,private cup: CheckUserPlanService,private domSanitizer: DomSanitizer,private cookieService: CookieService,private router: Router,private pis: ProfileImageService) { 
+  constructor(private authService: SocialAuthService, private http: HttpClient, private toast:NgToastService,private cup: CheckUserPlanService,private domSanitizer: DomSanitizer,private cookieService: CookieService,private router: Router,private pis: ProfileImageService) { 
     if(localStorage.getItem("access_token")){
       this.toDisplay_ctf=true;
     }
@@ -55,6 +56,7 @@ export class NavbarComponent implements OnInit {
     this.http.get(environment.baseURL+'/logout',{headers}).subscribe((res)=>{
       if(Object.entries(res)[0][1]==="Logout Successfull"){
         this.toast.success({detail:"Success Message",summary:"Logged Out Successfully",duration:5000});
+        this.authService.signOut(true);
         localStorage.clear();
         //this.cookieService.deleteAll();
         this.router.navigate(['/home']);
